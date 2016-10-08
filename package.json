@@ -31,6 +31,12 @@
   "bugs": {
     "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
   },
+  "engines": {
+    "node": "4.4.0"
+  },
+  "scripts":{
+    "start" : "node devServer.js"
+  },
   "homepage": "https://github.com/gaearon/react-transform-boilerplate",
   "devDependencies": {
     "babel-core": "^6.6.5",
