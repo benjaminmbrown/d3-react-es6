@@ -13,18 +13,17 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.use('/public', express.static('public'));
-
 app.use(express.static('public'));
+
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(process.env.PORT || 5000, function(err) {
+app.listen(process.env.PORT || 5000, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at http://localhost:3000');
+  console.log('Listening at http://localhost:5000');
 });
