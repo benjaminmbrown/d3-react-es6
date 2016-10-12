@@ -5,10 +5,8 @@ import d3 from 'd3';
 class forceGraph extends Component{
 
 	render(){
-		return (te
-			 <div>test
-				<svg></svg>
-            </div>
+		return (
+			 <div>test<svg></svg></div>
             );
 	}
 }

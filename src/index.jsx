@@ -8,11 +8,12 @@ String.prototype.capitalize = function(){
 
 }
 
-Sttring.prototype.decapitalize = function(){
+String.prototype.decapitalize = function(){
 	return this.chartAt(0).toLowerCase() + this.slice(1);
 }
 
 ReactDOM.render(
 	<forceGraph url="data/topology.json"/>,
-	document.querySelectorAll('.forceGraph');[0]
+	document.querySelectorAll('.forceGraph')[0]
 );
+
